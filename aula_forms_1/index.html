@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        span{
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="forms-login-1">
+        <form name="signup" onsubmit="alert('Enviei o formulário')" autocomplete="on" target="_blank" method="post"
+            action="https://meusite.com.br/signup">
+            <font color="red" face="'Trebuchet MS',Arial, Tahoma">Este é o Formulário</font> <br>
+
+            <font face="Trebuchet MS">
+                Nome: <input type="text" name="name" placeholder="Insira seu nome" /><br>
+                Idade: <input type="number" name="age" /><br>
+                Senha: <input type="password" name="password" /><br>
+                <button type="submit">Enviar</button><br>
+            </font>
+        </form><br>
+    </div>
+    <hr>
+    <div id="forms-inputs">
+        <form method="post">
+            <label>Digite aqui qualquer texto: </label><input type="text" /><br>
+            <label>Number: </label><input type="number" min="0" max="10" step="5" /><br>
+            <label>Range: </label><input type="range" min="0" max="10" /><br>
+            <label>Color: </label><input type="color" /><br>
+            <label>E-mail: </label><input type="email" /><br>
+            <label>Url: </label><input type="url" /><br>
+            <label>Date: </label><input type="date"><br>
+            <label>Week: </label><input type="week"><br>
+            <label>Month: </label><input type="month"><br>
+            <label>Checkbox: </label><input type="checkbox"><input type="checkbox"><input type="checkbox" disabled><br>
+            <label>Radio: </label><input type="radio" name="mesmoNome"></label><input type="radio" name="mesmoNome"><br>
+            <label>Hidden: </label><input type="hidden"><br>
+            <label>File: </label><input type="file" multiple><br>
+            <label>Search: </label><input type="search">
+
+            <label>Button: </label><input type="submit" value="Enviar" />
+            <br>
+        </form>
+    </div>
+    <hr>
+
+    <div id="forms-pizzaria">
+        <form method="get">
+            <h3>Você selecionou: Pizza de Calabresa</h3>
+            <p>Quais Opcionais você deseja?</p>
+            <input type="checkbox" disabled name="opcionais[]" value="queijo"> + queijo <br>
+            <input type="checkbox" name="opcionais[]" value="calabresa"> + calabresa <br>
+            <input type="checkbox" name="opcionais[]" value="cebola"> + cebola <br>
+            <input type="checkbox" name="opcionais[]" value="azeitona"> + azeitona <br>
+
+            <p>Borda recheada?</p>
+            <input type="radio" name="borda" value="sim">Sim<br>
+            <input type="radio" name="borda" value="nao">Não<br>
+
+            <p>Bebida</p>
+            <input type="radio" name="bebida" value="suco">Suco<br>
+            <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+            <input type="radio" name="bebida" value="agua">Água<br>
+            <input type="radio" name="bebida" value="nenhum">Nenhum<br><br>
+
+            <button type="submit">Enviar pedido</button>
+        </form>
+    </div>
+    <hr>
+
+    <div id="forms-login-2">
+        <form onsubmit="" method="get">
+            Nome: <input type="text" name="name" placeholder="Insira seu nome" /><br>
+            Idade: <input type="number" name="age" min="0" /><br>
+            Senha: <input type="password" name="password" /><br>
+
+            <button type="submit" onmouseover="alert('Passei aqui')">Enviar</button><br>
+            <button type="reset" onmouseover="alert('Limpei')">Limpar</button><br>
+
+        </form>
+    </div>
+    <hr>
+
+    <div id="forms-cargos">
+        <form onsubmit="" method="get">
+            <label>Nome: </label><input type="text" name="name"><br><br>
+            <span><label>Cargo: </label></span>
+            <select name="role">
+                <option value="">Selecione o cargo</option>
+                <option value="gerente">Gerente</option>
+                <option value="diretor">Diretor</option>
+                <option value="secretario">Secretário</option>
+            </select>
+            <br><br>
+            <label>Assunto: </label><textarea rows="10" cols="150" name="assunto"></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
